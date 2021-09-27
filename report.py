@@ -9,10 +9,10 @@ from pandas import DataFrame
 from xls2xlsx import XLS2XLSX
 from xlsx2html import xlsx2html
 
-from documents_converter import convert
-from report_parser.src.html_utils import get_texts_and_tables
-from report_parser.src.parsing_tree import ParsingTree
-from report_parser.src.text_class import Text
+from src.documents_converter import convert
+from src.html_utils import get_texts_and_tables
+from src.parsing_tree import ParsingTree
+from src.text_class import Text
 
 
 class Report:
