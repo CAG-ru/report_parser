@@ -63,7 +63,7 @@ class Report:
                 self.html.append(f.read())
 
     def texts(self):
-        return (x for x in self.contents if type(x) == Text)
+        return (x for x in self.contents if type(x) != DataFrame)
 
     def tables(self):
         return (x for x in self.contents if type(x) == DataFrame)
@@ -88,7 +88,7 @@ class Report:
         find_text = True
         result = []
         for elem in self.contents:
-            if type(elem) == Text:
+            if type(elem) != DataFrame:
                 if find_text and elem.contains(name):
                     add_next_table = True
                     find_text = False
