@@ -8,7 +8,7 @@
 
 ## Установка
 
-```(shell)
+```shell
 pip install -r requirements.txt
 ```
 
