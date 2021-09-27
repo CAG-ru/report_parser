@@ -1,0 +1,5 @@
+mammoth
+openpyxl
+pandas
+xls2xlsx
+xlsx2html
