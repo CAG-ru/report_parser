@@ -24,7 +24,7 @@ class Report:
         self.contents = []
         self.html = []
         if self.ext not in ['html', 'doc', 'docx', 'xls', 'xlsx']:
-            self.log.append(f'Расширение {self.ext} не поддерживается')
+            raise ValueError(f'Расширение {self.ext} не поддерживается')
         self.load()
 
     def load(self):
